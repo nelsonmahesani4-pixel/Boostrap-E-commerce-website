@@ -6,7 +6,6 @@
   }
 
   body {
-    background: #f7f7f7;
     overflow-x: hidden;
   }
   /* header */
@@ -23,6 +22,7 @@
 
   .logo {
     width:100px;
+    cursor: pointer;
 
   }
 nav{
@@ -32,7 +32,6 @@ nav{
   align-items:center;
 }
 .list-unstyled{
-  border-radius:4px;
 padding:6px 10px 3px 10px;
 }
 button{
@@ -161,6 +160,7 @@ border-radius:4px;
     width: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: 0.3s;
+    cursor: pointer;
   }
 
   .cat:hover {
@@ -213,17 +213,10 @@ border-radius:4px;
     background-color:#7c0f0f;
     color:white;
   }
-
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-20%);
-    }
-  }
-
-
+marquee:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
   /* Small Mobile Devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
   header {
@@ -286,10 +279,7 @@ border-radius:4px;
   }
 
   .buttons {
-    width: 100%;
-    align-items: flex-end;
-    gap: 10px;
-    margin-left:100px;
+    
   }
   .Shop-btn{
     top:120px;
@@ -438,10 +428,14 @@ border-radius:4px;
     margin-right: 0;
     width: 100%;
   }
+  .Account{
+    top:-100px;
+  }
 .Signup-btn{
   padding:8px;
   color:white;
 border-radius:4px;
+
 
 }
 .Signup-btn:hover{
@@ -461,6 +455,22 @@ border-radius:4px;
 }
   .hero {
     justify-content: center;
+  }
+   .Shop-btn{
+    top:275px;
+    gap:20px;
+  }
+  .hero-text{
+    left:100px;
+  }
+   .hero-image{
+    top:-50px;
+    left:10px;
+    justify-content: center;
+   }
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
 
   .hero-text {

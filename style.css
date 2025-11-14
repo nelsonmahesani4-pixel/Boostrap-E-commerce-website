@@ -34,9 +34,7 @@ nav{
 .list-unstyled{
 padding:6px 10px 3px 10px;
 }
-button{
-  border-radius:4px;
-}
+
 .Signup-btn{
   padding:8px;
   color:white;
@@ -195,7 +193,7 @@ border-radius:4px;
   }
 
   .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 
   .card img {
@@ -222,8 +220,15 @@ marquee:hover{
   animation-play-state: paused;
   cursor: pointer;
 }
+.Shop-btn{
+  background-color:brown;
+  width:100px;
+border-radius:4px;
+  padding:8px;
+  margin: auto;
+}
   /* Small Mobile Devices (max-width: 480px) */
-@media screen and (max-width: 480px) and  {
+@media screen and (max-width: 480px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -333,8 +338,13 @@ border-radius:4px;
 
   nav {
     width: 100%;
+    display:none;
   }
-
+.hamburger{
+  display:block;
+ width:30px;
+ font-size: 32px;
+}
   .search-box input {
     width: 80%;
   }
@@ -380,20 +390,28 @@ border-radius:4px;
     width: 100%;
     margin: 10px 0;
   }
-#hamburger{
- display:none
-}
+
   .navbar-items {
+    display:block;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .Account{
-    flex-direction: column-reverse;
+ .Account{
+    top:100px;
+    flex-direction: row-reverse;
+  }
+  .cart{
+    top:-60px;
+  }
+  .search-box{
+    top:-100px;
+    left:-50px;
   }
 .Signup-btn{
   padding:8px;
   color:white;
 border-radius:4px;
+ top:-60px;
 
 }
 .Signup-btn:hover{
@@ -403,6 +421,7 @@ border-radius:4px;
   padding:8px;
   color:white;
   border-radius:4px;
+   top:-60px;
 
 }
 .login-btn:hover{
@@ -422,6 +441,9 @@ border-radius:4px;
 
   .products {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+   .Shop-btn{
+    top:200px;
   }
 }
 
@@ -459,8 +481,7 @@ border-radius:4px;
     justify-content: center;
   }
    .Shop-btn{
-    top:275px;
-    gap:20px;
+    top:200px;
   }
   .hero-text{
     left:100px;
